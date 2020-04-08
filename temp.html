@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Latitude vs Temperature</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color:#f0f5f1">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Home</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="temp.html">Temperature</a>
+                            </li>
+                            <li>
+                                <a href="humidity.html">Humidity</a>
+                            </li>
+                            <li>
+                                <a href="cloud.html">Cloudiness</a>
+                            </li>
+                            <li>
+                                <a href="wind.html">Wind Speed</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="comparison.html">Comparison</a>
+                    </li>
+                    <li>
+                        <a href="data.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" style="background-color:whitesmoke">
+        <div class="row row-grid">
+            <div class="col-md-8">
+                <div class="box box-left">
+                    <section id="intro">
+                        <h1>Comparing the Effect of Latitude on Temperature</h1>
+                        <hr>
+                        <figure>
+                            <a target="_blank" href="visualizations/World_Latitude_vs_Temperature.png">
+                                <img src="visualizations/World_Latitude_vs_Temperature.png" alt="locations" class="img-fluid" width=100% height=100%>
+                            </a>
+                        </figure>
+                        <section id="summary">   
+                            <p>This anlysis looked for a relation between latitude and temperature. Using a Pandas DataFrame that contained the location and 
+                                cloud cover data for each city, a scatter plot was plotted using MatPlotLib to demonstrate the relation. There was a clear
+                                relationship between logitude and temperature. As a location is closer to the equator, the temperature increases. At the time
+                                of the analysis, the Southern Hemisphere was in summer, so there is not as much of a curve for locations south of the equator.
+                            </p>
+                            <hr>
+                            <hr>
+                        </section>
+                    </section>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box box-right">
+                    <h2>Visualizations</h2>
+                    <hr>
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-3 col-md-6">
+                          <h6>Latitude vs Temperature</h6>
+                            <figure>
+                                <a href="temp.html">
+                                    <img src="visualizations/World_Latitude_vs_Temperature.png" alt="Latitude vs. Temperature" class="img-thumbnail">
+                                </a>
+                            </figure>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-3 col-md-6">
+                          <h6>Latitude vs Humidity</h6>
+                            <figure>
+                                <a href="humidity.html">
+                                    <img src="visualizations/World_Latitude_vs_Humidity.png" alt="Latitude vs. Humidity" class="img-thumbnail">
+                                </a>
+                            </figure>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-3 col-md-6">
+                          <h6>Latitude vs Cloudiness</h6>
+                            <figure>
+                                <a href="cloud.html">
+                                    <img src="visualizations/World_Latitude_vs_Cloudiness.png" alt="Latitude vs. Cloudiness" class="img-thumbnail">
+                                </a>
+                            </figure>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-3 col-md-6">
+                          <h6>Latitude vs Wind Speed</h6>
+                            <figure>
+                                <a href="wind.html">
+                                    <img src="visualizations/World_Latitude_vs_Wind.png" alt="Latitude vs. Wind Speed" class="img-thumbnail">
+                                </a>
+                            </figure>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid p-3 p-md5">
+            <p> </p>
+            <p>This footer is for display purposes only. This information is not copywritten, If you'd like to steal my code, feel free.</p>
+            <p> </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>
